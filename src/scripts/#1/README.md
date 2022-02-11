@@ -16,28 +16,77 @@ The sum of `342` + `465` is `807`
 
 ### Solution
 ```js
-class Solution {
-lengthOfLongestSubstring(s) {
-    const letters = {};
-    let lastRepetedIndex = -1;
-    let index = 0;
-    let result = 0;
-
-    while (index < s.length) {
-    if (s[index] in letters) {
-        lastRepetedIndex = Math.max(lastRepetedIndex, letters[s[index]]);
+  class ListNode {
+    constructor(val) {
+      this.llist = { val, next: null };
     }
 
-    letters[s[index]] = index;
-    result = Math.max(result, index - lastRepetedIndex);
-    index++;
+    add(val) {
+      this.llist.next = { ...this.llist };
+      this.llist.val = val;
     }
+  }
 
-    return result;
-}
-}
+  class Solution {
+    addTwoNumbers(l1, l2) {
+      let current1 = l1;
+      let current2 = l2;
 
-const result = new Solution().lengthOfLongestSubstring("abrkaabcdefghijjxxx");
+      let stringFirstSumValue = "";
+      let stringSecondSumValue = "";
 
-console.log(`Result: ${result}`);
+      while (current1 || current2) {
+        const lengthFirstValue = stringFirstSumValue.length + 1;
+        const lengthSecondValue = stringSecondSumValue.length + 1;
+
+        if (current1) {
+          stringFirstSumValue = stringFirstSumValue.padEnd(
+            lengthFirstValue,
+            current1.val
+          );
+          current1 = current1.next;
+        }
+
+        if (current2) {
+          stringSecondSumValue = stringSecondSumValue.padEnd(
+            lengthSecondValue,
+            current2.val
+          );
+          current2 = current2.next;
+        }
+      }
+
+      const sumArray = (
+        parseFloat(stringFirstSumValue) + parseFloat(stringSecondSumValue)
+      )
+        .toString()
+        .split("");
+
+      const sumLinkedList = new ListNode(sumArray[0]);
+
+      Promise.all(
+        sumArray.map((item, index) => {
+          if (index !== 0) sumLinkedList.add(item);
+        })
+      );
+
+      return sumLinkedList.llist;
+    }
+  }
+
+  const l1 = new ListNode(2);
+  const l2 = new ListNode(5);
+
+  const array1 = [4, 3];
+  const array2 = [6, 4];
+
+  Promise.all(array1.map((item) => l1.add(item)));
+  Promise.all(array2.map((item) => l2.add(item)));
+
+  let result = new Solution().addTwoNumbers(l1.llist, l2.llist);
+
+  while (result) {
+    console.log(`Result: ${result.val}`);
+    result = result.next;
+  }
 ```
