@@ -23,7 +23,7 @@ function dayFive() {
       const firstElement = array[0] || -1;
       const lastElement = array[array.length - 1] || -1;
 
-      return `${[firstElement, lastElement]}`;
+      return `[${firstElement}, ${lastElement}]`;
     }
   }
 
