@@ -1,5 +1,5 @@
 /**
- * @challange
+ * @challenge
  * @day 4 (11/02/2022)
  * @description Imagine you are building a compiler. Before running any code, the compiler must check that the parentheses in the program are balanced. Every opening bracket must have a corresponding closing bracket. We can approximate this using strings.
  * @time 0.7ms

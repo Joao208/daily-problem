@@ -19,17 +19,17 @@ The length of substring `abcdefghij` inside of string `abrkaabcdefghijjxxx` is 1
 class Solution {
 lengthOfLongestSubstring(s) {
     const letters = {};
-    let lastRepetedIndex = -1;
+    let lastRepeatedIndex = -1;
     let index = 0;
     let result = 0;
 
     while (index < s.length) {
     if (s[index] in letters) {
-        lastRepetedIndex = Math.max(lastRepetedIndex, letters[s[index]]);
+        lastRepeatedIndex = Math.max(lastRepeatedIndex, letters[s[index]]);
     }
 
     letters[s[index]] = index;
-    result = Math.max(result, index - lastRepetedIndex);
+    result = Math.max(result, index - lastRepeatedIndex);
     index++;
     }
 
