@@ -17,21 +17,21 @@ The index of first element equal target and the index of last element equal targ
 ### Solution
 ```js
 class Solution {
-getRange(arr, x) {
+  getRange(arr, x) {
     let index = 0;
     const array = [];
 
     while (index < arr.length) {
-    if (arr[index] === x) array.push(index);
+      if (arr[index] === x) array.push(index);
 
-    index++;
+      index++;
     }
 
     const firstElement = array[0] || -1;
     const lastElement = array[array.length - 1] || -1;
 
     return `${[firstElement, lastElement]}`;
-}
+  }
 }
 
 const solution = new Solution();
