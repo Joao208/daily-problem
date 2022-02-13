@@ -16,77 +16,77 @@ The sum of `342` + `465` is `807`
 
 ### Solution
 ```js
-  class ListNode {
-    constructor(val) {
-      this.llist = { val, next: null };
-    }
-
-    add(val) {
-      this.llist.next = { ...this.llist };
-      this.llist.val = val;
-    }
+class ListNode {
+  constructor(val) {
+    this.llist = { val, next: null };
   }
 
-  class Solution {
-    addTwoNumbers(l1, l2) {
-      let current1 = l1;
-      let current2 = l2;
+  add(val) {
+    this.llist.next = { ...this.llist };
+    this.llist.val = val;
+  }
+}
 
-      let stringFirstSumValue = "";
-      let stringSecondSumValue = "";
+class Solution {
+  addTwoNumbers(l1, l2) {
+    let current1 = l1;
+    let current2 = l2;
 
-      while (current1 || current2) {
-        const lengthFirstValue = stringFirstSumValue.length + 1;
-        const lengthSecondValue = stringSecondSumValue.length + 1;
+    let stringFirstSumValue = "";
+    let stringSecondSumValue = "";
 
-        if (current1) {
-          stringFirstSumValue = stringFirstSumValue.padEnd(
-            lengthFirstValue,
-            current1.val
-          );
-          current1 = current1.next;
-        }
+    while (current1 || current2) {
+      const lengthFirstValue = stringFirstSumValue.length + 1;
+      const lengthSecondValue = stringSecondSumValue.length + 1;
 
-        if (current2) {
-          stringSecondSumValue = stringSecondSumValue.padEnd(
-            lengthSecondValue,
-            current2.val
-          );
-          current2 = current2.next;
-        }
+      if (current1) {
+        stringFirstSumValue = stringFirstSumValue.padEnd(
+          lengthFirstValue,
+          current1.val
+        );
+        current1 = current1.next;
       }
 
-      const sumArray = (
-        parseFloat(stringFirstSumValue) + parseFloat(stringSecondSumValue)
-      )
-        .toString()
-        .split("");
-
-      const sumLinkedList = new ListNode(sumArray[0]);
-
-      Promise.all(
-        sumArray.map((item, index) => {
-          if (index !== 0) sumLinkedList.add(item);
-        })
-      );
-
-      return sumLinkedList.llist;
+      if (current2) {
+        stringSecondSumValue = stringSecondSumValue.padEnd(
+          lengthSecondValue,
+          current2.val
+        );
+        current2 = current2.next;
+      }
     }
+
+    const sumArray = (
+      parseFloat(stringFirstSumValue) + parseFloat(stringSecondSumValue)
+    )
+      .toString()
+      .split("");
+
+    const sumLinkedList = new ListNode(sumArray[0]);
+
+    Promise.all(
+      sumArray.map((item, index) => {
+        if (index !== 0) sumLinkedList.add(item);
+      })
+    );
+
+    return sumLinkedList.llist;
   }
+}
 
-  const l1 = new ListNode(2);
-  const l2 = new ListNode(5);
+const l1 = new ListNode(2);
+const l2 = new ListNode(5);
 
-  const array1 = [4, 3];
-  const array2 = [6, 4];
+const array1 = [4, 3];
+const array2 = [6, 4];
 
-  Promise.all(array1.map((item) => l1.add(item)));
-  Promise.all(array2.map((item) => l2.add(item)));
+Promise.all(array1.map((item) => l1.add(item)));
+Promise.all(array2.map((item) => l2.add(item)));
 
-  let result = new Solution().addTwoNumbers(l1.llist, l2.llist);
+let result = new Solution().addTwoNumbers(l1.llist, l2.llist);
 
-  while (result) {
-    console.log(`Result: ${result.val}`);
-    result = result.next;
-  }
+while (result) {
+  console.log(`Result: ${result.val}`);
+  result = result.next;
+}
 ```

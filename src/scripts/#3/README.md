@@ -17,21 +17,21 @@ The palindrome inside `banana` is `anana`
 ### Solution
 ```js
 class Solution {
-longestPalindrome(str) {
+  longestPalindrome(str) {
     // @ts-ignore
     String.prototype.isPalindrome = function () {
-    const reversed = this.split("").reverse().join("");
+      const reversed = this.split("").reverse().join("");
 
-    return this === reversed;
+      return this === reversed;
     };
 
     while (!str.isPalindrome()) {
-    str = str.substring(1);
-    str = str.substring(0, str.length - 1);
+      str = str.substring(1);
+      str = str.substring(0, str.length - 1);
     }
 
     return str;
-}
+  }
 }
 
 const str = "tracecars";

@@ -23,27 +23,27 @@ The string of brackets is balanced
 ### Solution
 ```js
 class Solution {
-isValid(str) {
+  isValid(str) {
     if (str.length % 2 !== 0) return false;
 
     const stacks = [];
     const brackets = {
-    ")": "(",
-    "}": "{",
-    "]": "[",
+      ")": "(",
+      "}": "{",
+      "]": "[",
     };
     const closing = [")", "}", "]"];
 
     for (const bracket of str) {
-    if (closing.includes(bracket)) {
-        if (!stacks.length || stacks.pop() !== brackets[bracket]) return false
-    } else {
+      if (closing.includes(bracket)) {
+        if (!stacks.length || stacks.pop() !== brackets[bracket]) return false;
+      } else {
         stacks.push(bracket);
-    }
+      }
     }
 
     return !stacks.length;
-}
+  }
 }
 
 const solution = new Solution();

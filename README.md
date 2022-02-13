@@ -16,3 +16,7 @@
 ## AirBNB
 
 - [First and Last Indices of an Element in a Sorted Array](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%235)
+
+## Google
+
+- [Reverse a Linked List](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%236)
