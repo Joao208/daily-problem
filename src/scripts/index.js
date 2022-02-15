@@ -6,4 +6,5 @@ module.exports = {
   "#5": require("./#5"),
   "#6": require("./#6"),
   "#7": require("./#7"),
+  "#8": require("./#8"),
 };
