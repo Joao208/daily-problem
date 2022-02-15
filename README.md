@@ -20,3 +20,4 @@
 ## Google
 
 - [Reverse a Linked List](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%236)
+- [Sorting a list with 3 unique numbers](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%237)
