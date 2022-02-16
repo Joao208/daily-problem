@@ -25,3 +25,4 @@
 ## Facebook
 
 - [Two-Sum](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%238)
+- [Find the non-duplicate number](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%239)
