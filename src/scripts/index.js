@@ -8,4 +8,5 @@ module.exports = {
   "#7": require("./#7"),
   "#8": require("./#8"),
   "#9": require("./#9"),
+  "#10": require("./#10"),
 };
