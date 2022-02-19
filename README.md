@@ -7,6 +7,7 @@
 ## Twitter
 
 - [Longest Palindromic Substring](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%233)
+- [Invert a Binary Tree](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2312)
 
 ## Microsoft
 
