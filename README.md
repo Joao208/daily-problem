@@ -8,6 +8,7 @@
 
 - [Longest Palindromic Substring](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%233)
 - [Invert a Binary Tree](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2312)
+- [Maximum In A Stack](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2313)
 
 ## Microsoft
 
