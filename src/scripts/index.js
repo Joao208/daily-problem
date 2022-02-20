@@ -10,4 +10,6 @@ module.exports = {
   "#9": require("./#9"),
   "#10": require("./#10"),
   "#11": require("./#11"),
+  "#12": require("./#12"),
+  "#13": require("./#13"),
 };
