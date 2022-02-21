@@ -33,3 +33,7 @@
 ## Apple
 
 - [Floor and Ceiling of a Binary Search Tree](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2311)
+
+## LinkedIn
+
+- [Number of Ways to Climb Stairs](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2314)
