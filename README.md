@@ -3,6 +3,7 @@
 ## Uber
 
 - [Balanced Brackets](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%234)
+- [Find Pythagorean Triplets](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2315)
 
 ## Twitter
 
