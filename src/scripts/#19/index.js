@@ -3,7 +3,7 @@
  * @day 19 (26/02/2022)
  * @description You are given a 2D array of characters, and a target string. Return whether or not the word target word exists in the matrix. Unlike a standard word search, the word must be either going left-to-right, or top-to-bottom in the matrix.
  * @complexity O(n^2)
- * @time 9.2ms
+ * @time 0.2ms
  */
 function dayNineteen() {
   console.log("Expected: true");
