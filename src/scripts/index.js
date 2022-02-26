@@ -16,4 +16,6 @@ module.exports = {
   "#15": require("./#15"),
   "#16": require("./#16"),
   "#17": require("./#17"),
+  "#18": require("./#18"),
+  "#19": require("./#19"),
 };

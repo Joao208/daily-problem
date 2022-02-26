@@ -41,3 +41,7 @@
 ## LinkedIn
 
 - [Number of Ways to Climb Stairs](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2314)
+
+## Amazon
+
+- [Word Search](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2319)
