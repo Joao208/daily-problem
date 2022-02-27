@@ -6,21 +6,21 @@
  * @complexity O(n)
  */
 function dayNine() {
-  console.log('Expected: 1');
-  console.time('Tempo de execução');
+  console.log('Expected: 1')
+  console.time('Tempo de execução')
 
   function singleNumber(nums) {
-    const obj = {};
+    const obj = {}
 
-    nums.forEach((n) => (obj[n] ? obj[n]++ : (obj[n] = 1)));
+    nums.forEach((n) => (obj[n] ? obj[n]++ : (obj[n] = 1)))
 
-    return Object.entries(obj).filter(([, value]) => value === 1)[0][0];
+    return Object.entries(obj).filter(([, value]) => value === 1)[0][0]
   }
 
-  const result = singleNumber([4, 3, 2, 4, 1, 3, 2]);
+  const result = singleNumber([4, 3, 2, 4, 1, 3, 2])
 
-  console.log(`Result: ${result}`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: ${result}`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = dayNine;
+module.exports = dayNine

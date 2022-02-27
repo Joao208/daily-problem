@@ -6,36 +6,36 @@
  * @complexity O(log n)
  */
 function dayFive() {
-  console.log('Expected: [1, 4]');
-  console.time('Tempo de execução');
+  console.log('Expected: [1, 4]')
+  console.time('Tempo de execução')
 
   class Solution {
     getRange(arr, x) {
-      let index = 0;
-      const array = [];
+      let index = 0
+      const array = []
 
       while (index < arr.length) {
-        if (arr[index] === x) array.push(index);
+        if (arr[index] === x) array.push(index)
 
-        index++;
+        index++
       }
 
-      const firstElement = array[0] || -1;
-      const lastElement = array[array.length - 1] || -1;
+      const firstElement = array[0] || -1
+      const lastElement = array[array.length - 1] || -1
 
-      return `[${firstElement}, ${lastElement}]`;
+      return `[${firstElement}, ${lastElement}]`
     }
   }
 
-  const solution = new Solution();
+  const solution = new Solution()
 
-  const arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8];
-  const x = 2;
+  const arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]
+  const x = 2
 
-  const result = solution.getRange(arr, x);
+  const result = solution.getRange(arr, x)
 
-  console.log(`Result: ${result}`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: ${result}`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = dayFive;
+module.exports = dayFive

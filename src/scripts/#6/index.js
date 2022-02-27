@@ -6,71 +6,71 @@
  * @complexity O(n)
  */
 function daySix() {
-  console.log('Expected: 0 1 2 3 4');
-  console.time('Tempo de execução');
+  console.log('Expected: 0 1 2 3 4')
+  console.time('Tempo de execução')
 
   class ListNode {
     constructor(val) {
-      this.val = val;
-      this.next = null;
+      this.val = val
+      this.next = null
     }
 
     printList() {
-      let current = this;
-      let output = '';
+      let current = this
+      let output = ''
 
       while (current) {
-        output += `${current.val} `;
-        output += ' ';
-        current = current.next;
+        output += `${current.val} `
+        output += ' '
+        current = current.next
       }
 
-      console.log(output);
+      console.log(output)
     }
 
     reverseIteratively() {
-      let current = this;
-      let prev = null;
-      let next = null;
+      let current = this
+      let prev = null
+      let next = null
 
       while (current) {
-        next = current.next;
-        current.next = prev;
-        prev = current;
-        current = next;
+        next = current.next
+        current.next = prev
+        prev = current
+        current = next
       }
 
-      return prev;
+      return prev
     }
 
     reverseRecursively() {
-      if (!this.next) return this;
+      if (!this.next) return this
 
-      const reversed = this.next.reverseRecursively();
-      this.next.next = this;
-      this.next = null;
+      const reversed = this.next.reverseRecursively()
+      this.next.next = this
+      this.next = null
 
-      return reversed;
+      return reversed
     }
   }
 
-  const testHead = new ListNode(4);
-  const node1 = new ListNode(3);
-  testHead.next = node1;
-  const node2 = new ListNode(2);
-  node1.next = node2;
-  const node3 = new ListNode(1);
-  node2.next = node3;
-  const testTail = new ListNode(0);
-  node3.next = testTail;
+  const testHead = new ListNode(4)
+  const node1 = new ListNode(3)
+  testHead.next = node1
+  const node2 = new ListNode(2)
+  node1.next = node2
+  const node3 = new ListNode(1)
+  node2.next = node3
+  const testTail = new ListNode(0)
+  node3.next = testTail
 
-  console.log('Initial list:');
+  console.log('Initial list:')
 
-  testHead.printList();
-  testHead.reverseIteratively();
-  testTail.printList();
+  testHead.printList()
+  testHead.reverseIteratively()
+  testTail.printList()
 
-  console.timeEnd('Tempo de execução');
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = daySix;
+module.exports = daySix

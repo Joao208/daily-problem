@@ -6,25 +6,25 @@
  * @complexity O(n)
  */
 function dayEight() {
-  console.log('Expected: true');
-  console.time('Tempo de execução');
+  console.log('Expected: true')
+  console.time('Tempo de execução')
 
   function twoSum(numbers, target) {
-    const obj = {};
+    const obj = {}
 
     for (const n of numbers) {
-      if (obj[n]) return true;
+      if (obj[n]) return true
 
-      obj[target - n] = n;
+      obj[target - n] = n
     }
 
-    return false;
+    return false
   }
 
-  const result = twoSum([4, 7, 1, -3, 2], 5);
+  const result = twoSum([4, 7, 1, -3, 2], 5)
 
-  console.log(`Result: ${result}`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: ${result}`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = dayEight;
+module.exports = dayEight

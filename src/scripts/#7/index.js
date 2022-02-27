@@ -6,31 +6,31 @@
  * @complexity O(n)
  */
 function daySeven() {
-  console.log('Expected: [1, 1, 2, 2, 3, 3, 3]');
-  console.time('Tempo de execução');
+  console.log('Expected: [1, 1, 2, 2, 3, 3, 3]')
+  console.time('Tempo de execução')
 
   function sortNumbers(numbers) {
-    const obj = {};
+    const obj = {}
 
-    const newArray = [];
+    const newArray = []
 
     for (const n of numbers) {
-      if (!obj[n]) obj[n] = 0;
+      if (!obj[n]) obj[n] = 0
 
-      obj[n]++;
+      obj[n]++
     }
 
     for (const [key, count] of Object.entries(obj)) {
-      newArray.push(...Array(count).fill(key));
+      newArray.push(...Array(count).fill(key))
     }
 
-    return newArray;
+    return newArray
   }
 
-  const result = sortNumbers([3, 3, 2, 1, 3, 2, 1]);
+  const result = sortNumbers([3, 3, 2, 1, 3, 2, 1])
 
-  console.log(`Result: [${result}]`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: [${result}]`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = daySeven;
+module.exports = daySeven

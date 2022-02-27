@@ -7,27 +7,27 @@
  * @time 0.1ms
  */
 function dayTen() {
-  console.log('Expected: true false');
-  console.time('Tempo de execução');
+  console.log('Expected: true false')
+  console.time('Tempo de execução')
 
   function check(nums) {
-    let count = 0;
+    let count = 0
 
     for (let i = 0; i < nums.length - 1; i++) {
       if (nums[i] > nums[i + 1]) {
-        count++;
-        if (count > 1) return false;
+        count++
+        if (count > 1) return false
       }
     }
 
-    return true;
+    return true
   }
 
-  const result1 = check([13, 4, 7]);
-  const result2 = check([5, 1, 3, 2, 5]);
+  const result1 = check([13, 4, 7])
+  const result2 = check([5, 1, 3, 2, 5])
 
-  console.log(`Result: ${result1} ${result2}`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: ${result1} ${result2}`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = dayTen;
+module.exports = dayTen

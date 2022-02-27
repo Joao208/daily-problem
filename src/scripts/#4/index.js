@@ -6,43 +6,43 @@
  * @complexity O(n)
  */
 function dayFour() {
-  console.log('Expected: false true true');
-  console.time('Tempo de execução');
+  console.log('Expected: false true true')
+  console.time('Tempo de execução')
 
   class Solution {
     isValid(str) {
-      if (str.length % 2 !== 0) return false;
+      if (str.length % 2 !== 0) return false
 
-      const stacks = [];
+      const stacks = []
       const brackets = {
         ')': '(',
         '}': '{',
         ']': '[',
-      };
-      const closing = [')', '}', ']'];
+      }
+      const closing = [')', '}', ']']
 
       for (const bracket of str) {
         if (closing.includes(bracket)) {
           if (!stacks.length || stacks.pop() !== brackets[bracket]) {
-            return false;
+            return false
           }
         } else {
-          stacks.push(bracket);
+          stacks.push(bracket)
         }
       }
 
-      return !stacks.length;
+      return !stacks.length
     }
   }
 
-  const solution = new Solution();
+  const solution = new Solution()
 
-  const result1 = solution.isValid('()(){(())');
-  const result2 = solution.isValid('');
-  const result3 = solution.isValid('([{}])()');
+  const result1 = solution.isValid('()(){(())')
+  const result2 = solution.isValid('')
+  const result3 = solution.isValid('([{}])()')
 
-  console.log(`Result: ${result1} ${result2} ${result3}`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: ${result1} ${result2} ${result3}`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = dayFour;
+module.exports = dayFour

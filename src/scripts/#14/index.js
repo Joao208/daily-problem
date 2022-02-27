@@ -6,20 +6,20 @@
  * @time 0.3ms
  */
 function dayFourteen() {
-  console.log('Expected: 5, 8');
-  console.time('Tempo de execução');
+  console.log('Expected: 5, 8')
+  console.time('Tempo de execução')
 
   function staircase(n) {
-    if (n <= 1) return 1;
+    if (n <= 1) return 1
 
-    return staircase(n - 1) + staircase(n - 2);
+    return staircase(n - 1) + staircase(n - 2)
   }
 
-  const result1 = staircase(4);
-  const result2 = staircase(5);
+  const result1 = staircase(4)
+  const result2 = staircase(5)
 
-  console.log(`Result: ${result1}, ${result2}`);
-  console.timeEnd('Tempo de execução');
+  console.log(`Result: ${result1}, ${result2}`)
+  console.timeEnd('Tempo de execução')
 }
 
-module.exports = dayFourteen;
+module.exports = dayFourteen

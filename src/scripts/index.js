@@ -19,4 +19,4 @@ module.exports = {
   '#18': require('./#18'),
   '#19': require('./#19'),
   '#20': require('./#20'),
-};
+}
