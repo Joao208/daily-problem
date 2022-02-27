@@ -40,8 +40,8 @@ function dayEighteen() {
   }
 
   const graph = {
-    a: { a2: {}, a3: {} },
-    b: { b2: {} },
+    a: {a2: {}, a3: {}},
+    b: {b2: {}},
     c: {},
   }
 
