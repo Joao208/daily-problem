@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function daySix() {
-  console.log("Expected: 0 1 2 3 4");
-  console.time("Tempo de execução");
+  console.log('Expected: 0 1 2 3 4');
+  console.time('Tempo de execução');
 
   class ListNode {
     constructor(val) {
@@ -17,11 +17,11 @@ function daySix() {
 
     printList() {
       let current = this;
-      let output = "";
+      let output = '';
 
       while (current) {
         output += `${current.val} `;
-        output += " ";
+        output += ' ';
         current = current.next;
       }
 
@@ -64,13 +64,13 @@ function daySix() {
   const testTail = new ListNode(0);
   node3.next = testTail;
 
-  console.log("Initial list:");
+  console.log('Initial list:');
 
   testHead.printList();
   testHead.reverseIteratively();
   testTail.printList();
 
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = daySix;

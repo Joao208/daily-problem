@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function dayEight() {
-  console.log("Expected: true");
-  console.time("Tempo de execução");
+  console.log('Expected: true');
+  console.time('Tempo de execução');
 
   function twoSum(numbers, target) {
     const obj = {};
@@ -24,7 +24,7 @@ function dayEight() {
   const result = twoSum([4, 7, 1, -3, 2], 5);
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayEight;

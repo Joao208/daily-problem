@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function dayTwelve() {
-  console.log("Expected: a b d e c f, a c f b e d");
-  console.time("Tempo de execução");
+  console.log('Expected: a b d e c f, a c f b e d');
+  console.time('Tempo de execução');
 
   class Node {
     constructor(value) {
@@ -16,7 +16,7 @@ function dayTwelve() {
       this.right = null;
     }
 
-    preorder(str = "") {
+    preorder(str = '') {
       console.log(this.value);
 
       if (this.left) {
@@ -41,22 +41,22 @@ function dayTwelve() {
     return node;
   }
 
-  const root = new Node("a");
-  root.left = new Node("b");
-  root.right = new Node("c");
-  root.left.left = new Node("d");
-  root.left.right = new Node("e");
-  root.right.left = new Node("f");
+  const root = new Node('a');
+  root.left = new Node('b');
+  root.right = new Node('c');
+  root.left.left = new Node('d');
+  root.left.right = new Node('e');
+  root.right.left = new Node('f');
 
-  console.log("Result before invert:");
+  console.log('Result before invert:');
   root.preorder();
 
   invert(root);
 
-  console.log("Result after invert:");
+  console.log('Result after invert:');
   root.preorder();
 
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayTwelve;

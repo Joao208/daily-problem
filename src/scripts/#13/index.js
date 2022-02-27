@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function dayThirteen() {
-  console.log("Expected: 3, 2");
-  console.time("Tempo de execução");
+  console.log('Expected: 3, 2');
+  console.time('Tempo de execução');
 
   class MaxStack {
     constructor() {
@@ -56,7 +56,7 @@ function dayThirteen() {
   const result2 = s.max();
 
   console.log(`Result: ${result1}, ${result2}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayThirteen;

@@ -7,10 +7,16 @@
   "author": "joao208",
   "license": "MIT",
   "private": false,
-  "scripts":{
-    "play":"node src/index.js"
+  "scripts": {
+    "play": "node src/index.js",
+    "check:code": "eslint . --fix"
   },
   "dependencies": {
     "reply": "^0.5.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "eslint": "^8.10.0",
+    "eslint-config-google": "^0.14.0"
   }
 }

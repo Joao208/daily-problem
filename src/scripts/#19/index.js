@@ -6,32 +6,32 @@
  * @time 0.2ms
  */
 function dayNineteen() {
-  console.log("Expected: true");
-  console.time("Tempo de execução");
+  console.log('Expected: true');
+  console.time('Tempo de execução');
 
   function word_search(matrix, word) {
     if (matrix.length !== word.length) return false;
 
     for (let i = 0; i < matrix.length; i++) {
-      if (matrix[i].join("") === word) return true;
+      if (matrix[i].join('') === word) return true;
 
-      if (matrix.map((x) => x[i]).join("") === word) return true;
+      if (matrix.map((x) => x[i]).join('') === word) return true;
     }
 
     return false;
   }
 
   const matrix = [
-    ["F", "A", "C", "I"],
-    ["O", "B", "Q", "P"],
-    ["A", "N", "O", "B"],
-    ["M", "A", "S", "S"],
+    ['F', 'A', 'C', 'I'],
+    ['O', 'B', 'Q', 'P'],
+    ['A', 'N', 'O', 'B'],
+    ['M', 'A', 'S', 'S'],
   ];
 
-  const result = word_search(matrix, "FOAM");
+  const result = word_search(matrix, 'FOAM');
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayNineteen;

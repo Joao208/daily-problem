@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function dayTwo() {
-  console.log("Expected: 10");
-  console.time("Tempo de execução");
+  console.log('Expected: 10');
+  console.time('Tempo de execução');
 
   class Solution {
     lengthOfLongestSubstring(s) {
@@ -30,10 +30,10 @@ function dayTwo() {
     }
   }
 
-  const result = new Solution().lengthOfLongestSubstring("abrkaabcdefghijjxxx");
+  const result = new Solution().lengthOfLongestSubstring('abrkaabcdefghijjxxx');
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayTwo;

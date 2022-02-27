@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function dayNine() {
-  console.log("Expected: 1");
-  console.time("Tempo de execução");
+  console.log('Expected: 1');
+  console.time('Tempo de execução');
 
   function singleNumber(nums) {
     const obj = {};
@@ -20,7 +20,7 @@ function dayNine() {
   const result = singleNumber([4, 3, 2, 4, 1, 3, 2]);
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayNine;

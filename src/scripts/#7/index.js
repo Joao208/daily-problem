@@ -6,8 +6,8 @@
  * @complexity O(n)
  */
 function daySeven() {
-  console.log("Expected: [1, 1, 2, 2, 3, 3, 3]");
-  console.time("Tempo de execução");
+  console.log('Expected: [1, 1, 2, 2, 3, 3, 3]');
+  console.time('Tempo de execução');
 
   function sortNumbers(numbers) {
     const obj = {};
@@ -30,7 +30,7 @@ function daySeven() {
   const result = sortNumbers([3, 3, 2, 1, 3, 2, 1]);
 
   console.log(`Result: [${result}]`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = daySeven;

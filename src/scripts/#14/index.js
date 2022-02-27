@@ -6,8 +6,8 @@
  * @time 0.3ms
  */
 function dayFourteen() {
-  console.log("Expected: 5, 8");
-  console.time("Tempo de execução");
+  console.log('Expected: 5, 8');
+  console.time('Tempo de execução');
 
   function staircase(n) {
     if (n <= 1) return 1;
@@ -19,7 +19,7 @@ function dayFourteen() {
   const result2 = staircase(5);
 
   console.log(`Result: ${result1}, ${result2}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayFourteen;

@@ -6,19 +6,18 @@
  * @complexity O(n^2)
  */
 function dayThree() {
-  console.log("Expected: racecar");
-  console.time("Tempo de execução");
+  console.log('Expected: racecar');
+  console.time('Tempo de execução');
 
   class Solution {
     longestPalindrome(str) {
-      // @ts-ignore
-      String.prototype.isPalindrome = function () {
-        const reversed = this.split("").reverse().join("");
+      function isPalindrome(str) {
+        const reversed = str.split('').reverse().join('');
 
-        return this === reversed;
-      };
+        return str === reversed;
+      }
 
-      while (!str.isPalindrome()) {
+      while (!isPalindrome(str)) {
         str = str.substring(1);
         str = str.substring(0, str.length - 1);
       }
@@ -27,11 +26,11 @@ function dayThree() {
     }
   }
 
-  const str = "tracecars";
+  const str = 'tracecars';
   const result = new Solution().longestPalindrome(str);
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayThree;

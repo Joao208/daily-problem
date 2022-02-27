@@ -7,8 +7,8 @@
  * @time 0.1ms
  */
 function dayTen() {
-  console.log("Expected: true false");
-  console.time("Tempo de execução");
+  console.log('Expected: true false');
+  console.time('Tempo de execução');
 
   function check(nums) {
     let count = 0;
@@ -27,7 +27,7 @@ function dayTen() {
   const result2 = check([5, 1, 3, 2, 5]);
 
   console.log(`Result: ${result1} ${result2}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayTen;

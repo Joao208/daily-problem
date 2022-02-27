@@ -6,8 +6,8 @@
  * @complexity O(log h)
  */
 function dayEleven() {
-  console.log("Expected: (4, 6)");
-  console.time("Tempo de execução");
+  console.log('Expected: (4, 6)');
+  console.time('Tempo de execução');
 
   class Node {
     constructor(value) {
@@ -50,7 +50,7 @@ function dayEleven() {
   const result = root.findCeilingFloor(root, 5);
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayEleven;

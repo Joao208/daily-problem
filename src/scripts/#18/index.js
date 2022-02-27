@@ -6,8 +6,8 @@
  * @time 0.5ms
  */
 function dayEighteen() {
-  console.log("Expected: false, true");
-  console.time("Tempo de execução");
+  console.log('Expected: false, true');
+  console.time('Tempo de execução');
 
   function find(graph, node, visited) {
     if (visited.has(node)) {
@@ -40,19 +40,19 @@ function dayEighteen() {
   }
 
   const graph = {
-    a: { a2: {}, a3: {} },
-    b: { b2: {} },
+    a: {a2: {}, a3: {}},
+    b: {b2: {}},
     c: {},
   };
 
   const result1 = find_cycle(graph);
 
-  graph["c"] = graph;
+  graph['c'] = graph;
 
   const result2 = find_cycle(graph);
 
   console.log(`Result: ${result1}, ${result2}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayEighteen;

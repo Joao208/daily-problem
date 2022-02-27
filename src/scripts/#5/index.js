@@ -6,8 +6,8 @@
  * @complexity O(log n)
  */
 function dayFive() {
-  console.log("Expected: [1, 4]");
-  console.time("Tempo de execução");
+  console.log('Expected: [1, 4]');
+  console.time('Tempo de execução');
 
   class Solution {
     getRange(arr, x) {
@@ -35,7 +35,7 @@ function dayFive() {
   const result = solution.getRange(arr, x);
 
   console.log(`Result: ${result}`);
-  console.timeEnd("Tempo de execução");
+  console.timeEnd('Tempo de execução');
 }
 
 module.exports = dayFive;
