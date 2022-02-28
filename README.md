@@ -16,6 +16,7 @@
 - [Longest Substring Without Repeating Characters](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%232)
 - [Add two numbers as a linked list](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%231)
 - [Non-decreasing Array with Single Modification](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2310)
+- [Ways to Traverse a Grid](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2321)
 
 ## AirBNB
 
