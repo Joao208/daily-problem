@@ -10,6 +10,7 @@
 - [Longest Palindromic Substring](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%233)
 - [Invert a Binary Tree](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2312)
 - [Maximum In A Stack](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2313)
+- [Falling Dominoes](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2323)
 
 ## Microsoft
 
@@ -38,6 +39,7 @@
 ## Apple
 
 - [Floor and Ceiling of a Binary Search Tree](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2311)
+- [Intersection of Linked Lists](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2322)
 
 ## LinkedIn
 
