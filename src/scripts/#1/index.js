@@ -11,11 +11,11 @@ function dayOne() {
 
   class ListNode {
     constructor(val) {
-      this.llist = { val, next: null }
+      this.llist = {val, next: null}
     }
 
     add(val) {
-      this.llist.next = { ...this.llist }
+      this.llist.next = {...this.llist}
       this.llist.val = val
     }
   }
@@ -34,16 +34,16 @@ function dayOne() {
 
         if (current1) {
           stringFirstSumValue = stringFirstSumValue.padEnd(
-            lengthFirstValue,
-            current1.val
+              lengthFirstValue,
+              current1.val,
           )
           current1 = current1.next
         }
 
         if (current2) {
           stringSecondSumValue = stringSecondSumValue.padEnd(
-            lengthSecondValue,
-            current2.val
+              lengthSecondValue,
+              current2.val,
           )
           current2 = current2.next
         }
@@ -52,15 +52,15 @@ function dayOne() {
       const sumArray = (
         parseFloat(stringFirstSumValue) + parseFloat(stringSecondSumValue)
       )
-        .toString()
-        .split('')
+          .toString()
+          .split('')
 
       const sumLinkedList = new ListNode(sumArray[0])
 
       Promise.all(
-        sumArray.map((item, index) => {
-          if (index !== 0) sumLinkedList.add(item)
-        })
+          sumArray.map((item, index) => {
+            if (index !== 0) sumLinkedList.add(item)
+          }),
       )
 
       return sumLinkedList.llist
