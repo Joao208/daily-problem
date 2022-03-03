@@ -22,4 +22,5 @@ module.exports = {
   '#21': require('./#21'),
   '#22': require('./#22'),
   '#23': require('./#23'),
+  '#24': require('./#24'),
 }

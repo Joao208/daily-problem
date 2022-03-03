@@ -17,6 +17,7 @@ Figure out the final position of the dominoes. If there are dominoes that get pu
 ..RR.LL..RR
 ```
 ### Explanation
+The result after check forces is `..RR.LL..RR`
 
 ### Solution
 ```js

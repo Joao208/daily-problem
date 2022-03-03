@@ -11,11 +11,11 @@ function dayOne() {
 
   class ListNode {
     constructor(val) {
-      this.llist = {val, next: null}
+      this.llist = { val, next: null }
     }
 
     add(val) {
-      this.llist.next = {...this.llist}
+      this.llist.next = { ...this.llist }
       this.llist.val = val
     }
   }
@@ -34,16 +34,16 @@ function dayOne() {
 
         if (current1) {
           stringFirstSumValue = stringFirstSumValue.padEnd(
-              lengthFirstValue,
-              current1.val,
+            lengthFirstValue,
+            current1.val
           )
           current1 = current1.next
         }
 
         if (current2) {
           stringSecondSumValue = stringSecondSumValue.padEnd(
-              lengthSecondValue,
-              current2.val,
+            lengthSecondValue,
+            current2.val
           )
           current2 = current2.next
         }
@@ -52,15 +52,15 @@ function dayOne() {
       const sumArray = (
         parseFloat(stringFirstSumValue) + parseFloat(stringSecondSumValue)
       )
-          .toString()
-          .split('')
+        .toString()
+        .split('')
 
       const sumLinkedList = new ListNode(sumArray[0])
 
       Promise.all(
-          sumArray.map((item, index) => {
-            if (index !== 0) sumLinkedList.add(item)
-          }),
+        sumArray.map((item, index) => {
+          if (index !== 0) sumLinkedList.add(item)
+        })
       )
 
       return sumLinkedList.llist
@@ -73,13 +73,16 @@ function dayOne() {
   const array1 = [4, 3]
   const array2 = [6, 4]
 
-  Promise.all(array1.map((item) => l1.add(item)))
-  Promise.all(array2.map((item) => l2.add(item)))
+  array1.map((item) => l1.add(item))
+  array2.map((item) => l2.add(item))
 
   let result = new Solution().addTwoNumbers(l1.llist, l2.llist)
 
+  console.log(`Result:`)
+
   while (result) {
-    console.log(`Result: ${result.val}`)
+    console.log(result.val)
+
     result = result.next
   }
 

@@ -4,6 +4,7 @@
 
 - [Balanced Brackets](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%234)
 - [Find Pythagorean Triplets](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2315)
+- [Remove Consecutive Nodes that Sum to 0](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2324)
 
 ## Twitter
 
