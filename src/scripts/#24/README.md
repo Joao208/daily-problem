@@ -1,4 +1,4 @@
-# Ways to Traverse a Grid
+# Remove Consecutive Nodes that Sum to 0
 
 Given a linked list of integers, remove all consecutive nodes that sum up to 0.
 

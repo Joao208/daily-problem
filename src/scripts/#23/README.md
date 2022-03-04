@@ -1,4 +1,4 @@
-# Ways to Traverse a Grid
+# Falling Dominoes
 
 Given a string with the initial condition of dominoes, where:
 
