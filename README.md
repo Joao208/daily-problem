@@ -40,6 +40,7 @@
 - [Find the non-duplicate number](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%239)
 - [Find Cycles in a Graph](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2318)
 - [Move Zeros](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2328)
+- [Find the k-th Largest Element in a List](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2329)
 
 ## Apple
 
