@@ -10,9 +10,10 @@ module.exports = {
   },
   rules: {
     'require-jsdoc': 'off',
+    'object-curly-spacing': 'off',
     'max-len': 'off',
-    'semi': 'off',
-    'camelcase': 'off',
+    semi: 'off',
+    camelcase: 'off',
     'guard-for-in': 'off',
   },
 }
