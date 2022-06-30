@@ -28,4 +28,6 @@ module.exports = {
   '#27': require('./#27'),
   '#28': require('./#28'),
   '#29': require('./#29'),
+  '#30': require('./#30'),
+  '#31': require('./#31'),
 }

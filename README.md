@@ -25,6 +25,7 @@
 - [First and Last Indices of an Element in a Sorted Array](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%235)
 - [Edit Distance](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2316)
 - [Remove k-th Last Element From Linked List](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2325)
+- [Phone Numbers](https://github.com/Joao208/Daily-Problem/tree/main/src/scripts/%2331)
 
 ## Google
 
